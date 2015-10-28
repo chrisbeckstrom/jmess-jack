@@ -1,4 +1,6 @@
 # JMess - A utility to save your audio connections (mess) #
+CB fork: I'm going to attempt to remove the "do you really want to overwrite the XML file?"
+This will be my first time forking something and then recompiling it..!
 
 JMess can save an XML file with all the current [Jack Audio](http://jackaudio.org/) connections. This same file can be loaded to connect everything again. The XML file can also be edited. It also also has the option to disconnect all the clients.
 
