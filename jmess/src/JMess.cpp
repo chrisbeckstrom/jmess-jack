@@ -107,18 +107,18 @@ void JMess::writeOutput(QString xmlOutFile)
   QFile file(xmlOutFile);
   string answer = "";
   //Check for existing file first, and confirm before overwriting
-  if (file.exists()) {
-    while ((answer != "yes") && (answer != "no")) {
-      cout << "WARNING: The File " <<qPrintable(xmlOutFile)
-	   << " exists. Do you want to overwrite it? (yes/no): ";
-      cin >> answer;
-    }
-  }
-  else {
-    answer = "yes";
-  }
-
-  if (answer == "yes") {
+//  if (file.exists()) {
+//    while ((answer != "yes") && (answer != "no")) {
+//      cout << "WARNING: The File " <<qPrintable(xmlOutFile)
+//	   << " exists. Do you want to overwrite it? (yes/no): ";
+//      cin >> answer;
+//    }
+//  }
+//  else {
+//    answer = "yes";
+//  }
+  answer = "y"
+  if (answer == "y") {
     if (!file.open(QIODevice::WriteOnly)) {
       cerr << "Cannot open file for writing: "
 	   << qPrintable(file.errorString()) << endl;
